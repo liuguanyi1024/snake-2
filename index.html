@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        <canvas id="game-board" width="400" height="400"></canvas>
+        <p>使用方向键、按钮或滑动屏幕控制蛇的移动</p>
+        <!-- 分数显示 -->
+        <p id="current-score">当前分数: 0</p>
+        <p id="high-score">最高分数: 0</p>
+        <!-- 颜色选择和速度调节 -->
+        <div class="settings-container">
+            <div>
+                <label for="snake-color">选择蛇的颜色：</label>
+                <select id="snake-color">
+                    <option value="green">青色</option>
+                    <option value="blue">蓝色</option>
+                    <option value="yellow">黄色</option>
+                    <option value="black">黑色</option>
+                    <option value="purple">紫色</option>
+                    <option value="orange">橙色</option>
+                    <option value="brown">褐色</option>
+                </select>
+            </div>
+            <div>
+                <label for="speed-slider">蛇的速度：</label>
+                <input type="range" id="speed-slider" min="50" max="300" value="100">
+            </div>
+        </div>
+        <!-- 方向按钮 -->
+        <div class="controls">
+            <button id="up">↑</button>
+            <div class="middle-buttons">
+                <button id="left">←</button>
+                <button id="right">→</button>
+            </div>
+            <button id="down">↓</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
