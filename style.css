@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; /* 确保宽度适应内容 */
+    margin: 0 auto; /* 确保居中 */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#game-board {
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto; /* 确保 canvas 居中 */
+}
+
+/* 控制按钮样式 */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.middle-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin: 5px 0;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+button:active {
+    background-color: #555;
+}
+
+/* 分数显示样式 */
+#current-score, #high-score {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* 颜色选择和速度调节的水平布局 */
+.settings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.settings-container label {
+    margin-right: 10px;
+}
+
+.settings-container select,
+.settings-container input[type="range"] {
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* 速度调节滑块样式 */
+#speed-slider {
+    width: 100%;
+    cursor: pointer;
+}
